@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>Register</title>
+<link rel="stylesheet" type="text/css" href="../CSS/twheels.css">
+<script src="../JavaScript/twheels.js"></script>
+
+</html>
+
+<body>
+    <div class="center   center_text logoPrincipal">
+        <h1>TWHEELS</h1>
+    </div>
+    <div>
+    </div>
+    <div class="esq" onclick="openNav(), closePro()">
+        <div class="neumorfismo-1">
+            <img src="../Icons/menu.svg" class="backMenu">
+        </div>
+    </div>
+    <div class="dir" onclick="openPro(), closeNav()">
+        <div class="neumorfismo-1">
+            <img src="../Icons/perfilBack.svg" class="backMenu">
+        </div>
+    </div>
+
+    <div id="menuLateral" class="interior-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="logoMenu">
+                <p>TWHEELS</p>
+            </div>
+            <div class="menuItems">
+                <a onclick="home()">Home</a>
+                <a onclick="quemSomos()">Who we are</a>
+                <a onclick="contactos()">Contacts</a>
+            </div>
+       
+            <div class="rodapeMenu">
+                <div class="neumorfismo-1">
+                    <img src="../Icons/perfilBack.svg" class="backMenu">
+                </div>
+            </div>
+            <p class="bottomMenu" onclick="criarConta()">Create Account</p>            
+    </div>
+
+    <div id="proLateral" class="interior-pro">
+        <a href="javascript:void(0)" class="closebtn" onclick="closePro()">&times;</a>
+        <div class="logoMenu">
+            <p>TWHEELS</p>
+        </div>
+        <div class="fotoPerfil">
+            <div class="neumorfismo-3">
+            </div>
+        </div>
+        <a href="logIn.html">
+            <div class="centradoIn">
+                <span>Register</span>
+            </div>
+        </a>
+        <p class="atividadePro">Your activity</p>
+
+    </div>
+
+    <div>
+        <div class="section_block center" style='background-image: url("../media/registo.png"); background-repeat: no-repeat; background-position: center'>
+            <div style="padding-bottom: 125px;">
+            <div class="instrucoes">
+                <p> Register:</p>
+            </div>
+            <form id="criar" name="registar">
+                <div>
+                    <label>Name:</label>
+                </div>
+                <div>
+                    <input type="text" class="textfields" id="userName" name="userName">
+                    <p class="validar" type='text' id='userNameMsgErrorValidation'></p>
+                </div>
+
+                <div>
+                    <label>E-mail:</label>
+                </div>
+                <div>
+                    <input type="text" class="textfields" id="userMail" name="email">
+                    <p class="validar" type='text' id='emailMsgErrorValidation'></p>
+                </div>
+
+                <div>
+                    <label>Password:</label>
+                </div>
+                <div>
+                    <input type="password" class="textfields" id="userPass" name="password">
+                    <p class="validar" type='text' id='passwordMsgErrorValidation'></p>
+                </div>
+
+                <div>
+                    <label>Confirm Password:</label>
+                </div>
+                <div>
+                    <input type="password" class="textfields" name="passwordConfirmation">
+                    <p class="validar" type='text' id='confirmPasswordMsgErrorValidation'></p>
+                </div>
+
+                <div>
+                    <button type="button" class="formButton" onclick="validateEmptyPassword(); validateEmptyPasswordConfirmation(); validateEmptyUserName(); ValidateEmail(document.registar.email); ValidatePassword(document.registar.password, document.registar.passwordConfirmation); registo()">Criar Conta</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>

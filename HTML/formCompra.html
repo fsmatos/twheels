@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <title>Buy</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/twheels.css">
+    <script src="../JavaScript/twheels.js"></script>
+</html>
+
+<body onload="loadUserName(); comprar(); dadosFaturacao()">
+    <div class="center   center_text logoPrincipal">
+        <h1>TWHEELS</h1>
+    </div>
+    <div>
+    </div>
+    <div class="esq" onclick="openNav(), closePro()">
+        <div class="neumorfismo-1">
+            <img src="../Icons/menu.svg" class="backMenu">
+        </div> 
+    </div> 
+    <div class="dir" onclick="openPro(), closeNav()">
+        <div  class="neumorfismo-1">
+            <img src="../Icons/perfilBack.svg" class="backMenu">
+        </div>
+        <span class="w3-badge" id="badgeCarrinho"></span>
+    </div>
+
+    <div id="menuLateral" class="interior-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="logoMenu">
+                <p>TWHEELS</p>
+            </div>
+            <div class="menuItems">
+                <a onclick="homeLogado()">Home</a>
+                <a onclick="quemSomosLogado()">Who we are</a>
+                <a onclick="contactosLogado()">Contacts</a>
+            </div>
+       
+            <div class="rodapeMenu">
+                <div class="neumorfismo-1">
+                    <img src="../Icons/perfilBack.svg" class="backMenu">
+                </div>
+            </div>
+            <p class="bottomMenu user" onclick="editarPerfil()">Create account</p>            
+    </div>
+
+        <div id="proLateral" class="interior-pro">
+            <a href="javascript:void(0)" class="closebtn" onclick="closePro()">&times;</a>
+                <div class="logoMenu">
+                    <p>TWHEELS</p>
+                </div>
+                <div class="fotoPerfil">
+                    <div  class="neumorfismo-3">
+                    </div>
+                </div>
+                <p class="centradoIn user"></p>
+                
+
+            
+            <div class="logOut">
+                <span onclick="sair()">Log Out</span>
+            </div>
+            
+                <p class="atividadePro">Your activity</p>
+                
+                <ul id="listaFatura" class="bikeName itemValor">
+
+                </ul>
+            
+                <button type="button" id="valorCompra" class="menuBotaoValor  valorLocation" onclick="finalCompra()"><label id="priceFinal" class="btnPrice"></button>
+                <label onclick="cleanLocalStorage();closePro()" id="limparCompra" class="limparLocation">Clear</label>
+            </div>
+
+        
+    <div class="page">
+    </div>
+
+    <div>
+        <div class="section_block center" style='background-image: url("../media/registo.png"); background-repeat: no-repeat; background-position: center'>
+            <div style="padding-bottom: 125px;">
+                <div class="instrucoes">
+                    <p>It's the final sprint!</p>
+                </div>
+                    <form id="criar" name="finalizarCompra">
+                        <div class="separar">
+                            <label>Name:</label>
+                        </div>
+                        <div>  
+                            <input type = "text" class="textfields" id="nome" name = "nome">
+                            <p class="validar" type='text' id='nomeMsgErrorValidation'></p>
+                        </div>
+                            
+                        <div class="separar">
+                            <label>E-mail:</label>
+                        </div>
+                        <div>
+                            <input type = "text" class="textfields" id="email" name="mail">
+                            <p class="validar" type='text' id='emailMsgErrorValidation'></p>
+                        </div>
+                            
+                        <div class="separar">
+                            <label>Phone:</label>
+                        </div>
+                        <div>     
+                            <input type = "text" class="textfields" id="telemovel" name="phone">
+                            <p class="validar" type='text' id='phoneFormat'></p>
+                        </div>
+
+                        <div class="separar">
+                            <label>Address:</label>
+                        </div>
+                            
+                        <div>     
+                            <input type = "text" class="textfields" id="endereco" name="endereco">
+                            <p class="validar" type='text' id='enderecoMsgErrorValidation'></p>
+                        </div>
+
+                        <div class="separar">
+                            <label>Zip code:</label>
+                        </div>
+                        <div>  
+                            <input type = "text" class="textfields" id="postal" name="zip">
+                            <p class="validar" type='text' id='zipFormat'></p>
+                        </div>
+                            
+                            
+                        <div class="separar">
+                            <label>Country:</label>
+                        </div>
+                        <div>
+                            <input type = "text" class="textfields" id="pais" name="pais">
+                            <p class="validar" type='text' id='paisMsgErrorValidation'></p>
+                        </div>
+                            
+                        <div class="separar">
+                            <label>City:</label>
+                        </div>
+                        <div>     
+                            <input type = "text" class="textfields" id="distrito" name="distrito">
+                            <p class="validar" type='text' id='distritoMsgErrorValidation'></p>
+                        </div>
+
+
+                        <div class="separar">
+                            <label>Visa:</label>
+                            <input type = "radio" name="pay" value="Visa">
+                            
+                            <label>Mastercard:</label>
+                            <input type = "radio" name="pay" value="Mastercard">
+                            <p class="validar" type='text' id='payMsgErrorValidation'></p>
+                        </div>
+
+                        <div></div>
+
+                        <div class="separar">
+                            <label>Card Name:</label>
+                        </div>
+                        <div>  
+                            <input type = "text" class="textfields" id="cartao" name="cartaoNome">
+                            <p class="validar" type='text' id='cartaoNomeMsgErrorValidation'></p>
+                        </div>
+                            
+                        <div class="separar">
+                            <label>Card Number:</label>
+                        </div>
+                        <div>
+                            <input type = "text" class="textfields" id="numero" name="cartaoNumero">
+                            <p class="validar" type='text' id='cartaoNumeroMsgErrorValidation'></p>
+                        </div>
+                            
+                        <div class="separar">
+                            <label>MM/YY:</label>
+                        </div>
+                        <div>     
+                            <input type = "text" class="textfields" id="validade" name="validade">
+                            <p class="validar" type='text' id='validadeMsgErrorValidation'></p>
+                        </div>
+
+                        <div class="separar">
+                            <label>Code:</label>
+                        </div>
+                        <div>    
+                            <input type = "text" class="textfields" id="codigo" name="codigo">
+                            <p class="validar" type='text' id='codigoMsgErrorValidation'></p>
+                        </div>
+
+                        <div class="separar">
+                            <label>CEP:</label>
+                        </div>
+                        <div>  
+                            <input type = "text" class="textfields" id="cep" name="cep">
+                            <p class="validar" type='text' id='cepMsgErrorValidation'></p>
+                        </div>
+                            
+                        <div>
+                            <button type="button" class="formButton" onclick="ValidatePhone(document.finalizarCompra.phone); validateEmptyNome(); validateEmptyEndereco(); validateEmptyPais(); validateEmptyDistrito(); validateEmptyPay(); validateEmptyCartaoNome(); validateEmptyCartaoNumero(); validateEmptyValidade(); validateEmptyCodigo(); validateEmptyCep(); ValidateZip(document.finalizarCompra.zip); ValidateEmail(document.finalizarCompra.mail);   salvarFicheiro();cleanLocalStorage()"><label id="valorBike" class="btnPrice"></button>
+                        </div>
+
+                        <input type="hidden" id="objetosFaturados">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <title>Rent</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/twheels.css">
+    <script src="../JavaScript/twheels.js"></script>
+</html>
+
+<body onload="loadUserName(); comprar(); getBikeInfo('aluguer');">
+    <div class="center   center_text logoPrincipal">
+        <h1>TWHEELS</h1>
+    </div>
+    <div>
+    </div>
+    <div class="esq" onclick="openNav(), closePro()">
+        <div class="neumorfismo-1">
+            <img src="../Icons/menu.svg" class="backMenu">
+        </div> 
+    </div> 
+    <div class="dir" onclick="openPro(), closeNav()">
+        <div  class="neumorfismo-1">
+            <img src="../Icons/perfilBack.svg" class="backMenu">
+        </div>
+        <span class="w3-badge" id="badgeCarrinho"></span>
+    </div>
+
+    <div id="menuLateral" class="interior-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="logoMenu">
+                <p>TWHEELS</p>
+            </div>
+            <div class="menuItems">
+                <a onclick="homeLogado()">Home</a>
+                <a onclick="quemSomosLogado()">Who we are</a>
+                <a onclick="contactosLogado()">Contacts</a>
+            </div>
+       
+            <div class="rodapeMenu">
+                <div class="neumorfismo-1">
+                    <img src="../Icons/perfilBack.svg" class="backMenu">
+                </div>
+            </div>
+            <p class="bottomMenu user" onclick="editarPerfil()">Create Account</p>            
+    </div>
+
+        <div id="proLateral" class="interior-pro">
+            <a href="javascript:void(0)" class="closebtn" onclick="closePro()">&times;</a>
+                <div class="logoMenu">
+                    <p>TWHEELS</p>
+                </div>
+                <div class="fotoPerfil">
+                    <div  class="neumorfismo-3">
+                    </div>
+                </div>
+                <p class="centradoIn user" onclick="editarPerfil()"></p>
+                
+                <div class="logOut">
+                    <span onclick="sair()">Sair</span>
+                </div>
+                
+                <p class="atividadePro">Your activity</p>
+               
+                <ul id="listaFatura" class="bikeName itemValor">
+
+                </ul>
+            
+                <button id="valorCompra" type="button" class="menuBotaoValor  valorLocation" onclick="finalCompra()"><label id="priceFinal" class="btnPrice"></button>
+                <label onclick="cleanLocalStorage();closePro()" id="limparCompra" class="limparLocation">Clear</label>
+            </div>
+
+            
+            <div class="section_block center" style='background-image: url("../media/registo.png"); background-repeat: no-repeat; background-position: center'>
+                <div style="padding-bottom: 125px;">
+                    <p class="subtitulo" id="nomeBike"></p>
+
+                    <div class="instrucoes">
+                        <p>It's the final sprint!</p>
+                    </div>
+                <img class="perfilBike" src="../Icons/oldBike.jpg">
+                <p class="infoTitulo">Some Information...</p>
+                <form>
+                    <select id="horas" name="horas"  class="horasAluguer" onclick="getBikeInfoFinal()">
+                        <option value="1" selected >1 hour</option>
+                        <option value="2" >2 hours</option>
+                        <option value="3" >3 hours</option>
+                        <option value="4">4 hours</option>
+                      </select> 
+                </form>
+                <button type="button" class="infoButton" onclick="produto('aluguer');comprar(); aluguerLogado()"><label id="valorBike" class="btnPrice"> €</label></button>
+            </div>
+        </div>
+</body>

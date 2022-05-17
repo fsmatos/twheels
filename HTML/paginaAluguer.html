@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<hmtl>
+    <link rel="stylesheet" type = "text/css" href="../CSS/twheels.css">
+    <meta name = "viewport" content="width= device-width, inicial-scale=1.0">
+    <script src="../JavaScript/twheels.js"></script>
+    <body>
+        <div class="center   center_text logoPrincipal">
+            <h1>TWHEELS</h1>
+        </div>
+        <div class="esq" onclick="openNav(), closePro()">
+            <div class="neumorfismo-1">
+                <img src="../Icons/menu.svg" class="backMenu">
+            </div> 
+        </div> 
+        <div class="dir" onclick="openPro(), closeNav()">
+            <div  class="neumorfismo-1">
+                <img src="../Icons/perfilBack.svg" class="backMenu">
+            </div>
+        </div>
+
+        <div class="section_block center" style='background-image: url("../media/registo.png"); background-repeat: no-repeat; background-position: center'>
+            <div class="instrucoes">
+                <p id="escolhas">Almost there</p>
+            </div>
+            <div class="mainList">
+                <div class="centradoListaBikes  containerBike">    
+                    <img onclick="abrirBicicletaAluguer(1, 'BoneShaker', '20')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaAluguer(1, 'BoneShaker', '20')" class="openLabel">BoneShaker</label>
+                    </div>
+                </div>
+
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaAluguer(1, 'Columbia Ordinary', '30')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaAluguer(2, 'Columbia Ordinary', '30')" class="openLabel">Columbia Ordinary</label>
+                    </div>
+                </div>
+
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaAluguer(1, 'The Express', '40')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaAluguer(3, 'The Express', '40')" class="openLabel">The Express</label>
+                    </div>
+                </div>
+            </div>
+            <div class="mainList">
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaAluguer(1, 'Imperial', '50')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaAluguer(4, 'Imperial', '50')" class="openLabel">Imperial</label>
+                    </div>
+                </div>
+            
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaAluguer(1, 'Imperial', '60')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaAluguer(5, 'Imperial', '60')" class="openLabel">Imperial</label>
+                    </div>
+                </div>
+
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaAluguer(1, 'Andrae', '20')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaAluguer(6, 'Andrae', '20')" class="openLabel">Andrae</label>
+                    </div>
+                </div>
+            </div>
+            <div class="mainList">
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaAluguer(1, 'Columbia Ordinary', '30')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaAluguer(7, 'Columbia Ordinary', '30')" class="openLabel">Columbia Ordinary</label>
+                    </div>
+                </div>
+
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaAluguer(1, 'BoneShaker', '40')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaAluguer(8, 'Boneshaker', '40')" class="openLabel">Boneshaker</label>
+                    </div>
+                </div>
+
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaAluguer(1, 'The Express', '50')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaAluguer(9, 'The Express', '50')" class="openLabel">The Express</label>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <div id="menuLateral" class="interior-menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="logoMenu">
+                    <p>TWHEELS</p>
+                </div>
+                <div class="menuItems">
+                    <a onclick="home()">Home</a>
+                    <a onclick="quemSomos()">Who we are</a>
+                    <a onclick="contactos()">Contacts</a>
+                </div>
+           
+                <div class="rodapeMenu">
+                    <div class="neumorfismo-1">
+                        <img src="../Icons/perfilBack.svg" class="backMenu">
+                    </div>
+                </div>
+                <p class="bottomMenu" onclick="criarConta()">Create Account</p>            
+        </div>
+
+        <div id="proLateral" class="interior-pro">
+            <a href="javascript:void(0)" class="closebtn" onclick="closePro()">&times;</a>
+                <div class="logoMenu">
+                    <p>TWHEELS</p>
+                </div>
+                <div class="fotoPerfil">
+                    <div  class="neumorfismo-3">
+                    </div>
+                </div>                 
+                    <div class="centradoIn">
+                    <span onclick="criarConta()">Register</span>
+                    </div>                
+                <p class="atividadePro">Your activity</p>
+               
+        </div>
+    </body>
+</hmtl>

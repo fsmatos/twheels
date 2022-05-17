@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <title>Buy</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/twheels.css">
+    <script src="../JavaScript/twheels.js"></script>
+</html>
+
+<body onload="getBikeInfo('aluguer')">
+    <div class="center   center_text logoPrincipal">
+        <h1>TWHEELS</h1>
+    </div>
+    <div>
+    </div>
+    <div class="esq" onclick="openNav(), closePro()">
+        <div class="neumorfismo-1">
+            <img src="../Icons/menu.svg" class="backMenu">
+        </div> 
+    </div> 
+    <div class="dir" onclick="openPro(), closeNav()">
+        <div  class="neumorfismo-1">
+            <img src="../Icons/perfilBack.svg" class="backMenu">
+        </div>
+    </div>
+
+    <div id="menuLateral" class="interior-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="logoMenu">
+                <p>TWHEELS</p>
+            </div>
+            <div class="menuItems">
+                <a onclick="home()">Home</a>
+                <a onclick="quemSomos()">Who we are</a>
+                <a onclick="contactos()">Contacts</a>
+            </div>
+       
+            <div class="rodapeMenu">
+                <div class="neumorfismo-1">
+                    <img src="../Icons/perfilBack.svg" class="backMenu">
+                </div>
+            </div>
+            <p class="bottomMenu" onclick="criarConta()">Create account</p>            
+    </div>
+
+        <div id="proLateral" class="interior-pro">
+            <a href="javascript:void(0)" class="closebtn" onclick="closePro()">&times;</a>
+                <div class="logoMenu">
+                    <p>TWHEELS</p>
+                </div>
+                <div class="fotoPerfil">
+                    <div  class="neumorfismo-3">
+                    </div>
+                </div>                 
+                    <div class="centradoIn">
+                    <span onclick="criarConta()">Register</span>
+                    </div>                
+                <p class="atividadePro">Your activity</p>
+                
+            </div>
+
+   
+
+        <div class="section_block center" style='background-image: url("../media/registo.png"); background-repeat: no-repeat; background-position: center'>
+            <div style="padding-bottom: 125px;">
+                <p class="subtitulo" id="nomeBike"></p>
+                <div class="instrucoes">
+                    <p>It's the final sprint!</p>
+                </div>
+            <img class="perfilBike" src="../Icons/oldBike.jpg">
+            <p class="infoTitulo">Some information...</p>
+            <form>
+                <select id="horas" name="horas"  class="horasAluguer" onclick="getBikeInfoFinal()">
+                    <option value="1" selected >1 hour</option>
+                    <option value="2" >2 hours</option>
+                    <option value="3" >3 hours</option>
+                    <option value="4">4 hours</option>
+                  </select> 
+            </form>
+            <button type="button" class="infoButton" onclick="criarConta('infoBicicletaAluguerLogado.html')"><label id="valorBike" class="btnPrice"> €</label></button>
+        </div>
+    </div>
+</body>

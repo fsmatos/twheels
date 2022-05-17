@@ -1,0 +1,101 @@
+  <!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="../CSS/twheels.css">
+    <meta name = "viewport" content="width= device-width, inicial-scale=1.0">
+    <script src="../JavaScript/twheels.js"></script>
+    <body onload="loadUserName(); comprar();">
+        <div class="center   center_text logoPrincipal">
+            <h1 onclick="app()">TWHEELS</h1>
+        </div>
+        <div class="esq" onclick="openNav(), closePro()">
+            <div class="neumorfismo-1">
+                <img src="../Icons/menu.svg" class="backMenu">
+            </div> 
+        </div> 
+        <div class="dir" onclick="openPro(), closeNav()">
+            <div  class="neumorfismo-1">
+                <img src="../Icons/perfilBack.svg" class="backMenu">
+            </div>
+            <span class="w3-badge" id="badgeCarrinho"></span>
+        </div>
+
+        <div class="section_block center" style='background-image: url("../media/restauroBike.png"); background-repeat: no-repeat; background-position: center'>
+            
+            <p class="subtitulo">REPAIR</p>
+            <p class="instrucoesRestauro">Join us on this Tour and see the possibilities of One-Touch-Purchase</p>
+            <div  class="centradoRestauro" ><label class="specBotao" onclick="trabalhosLogado()">See our work</label></div>
+        </div>
+        
+        <div class="section_block center" style='background-image: url("../media/bikePublicidadeAluguer.png"); background-repeat: no-repeat; background-position: center'>
+            <p class="subtitulo" id="aluguer">RENT</p>
+            <p class="instrucoesRestauro" id="destinoAluguerLogado">Choose a category</p>
+                <div>
+                    <div class="centradoRestauro" onclick="aluguerLogado()">
+                        <label onclick="aluguerLogado()" class="specBotao">Single</label>
+                    </div>
+
+                    <div class="centradoRestauro" onclick="aluguerLogado()">
+                        <label onclick="aluguerLogado()" class="specBotao">Couple</label>
+                    </div>
+
+                    <div class="centradoRestauro" onclick="aluguerLogado()">
+                        <label onclick="aluguerLogado()" class="specBotao">Group</label>
+                    </div>
+                </div>
+        </div>
+
+        <div id="menuLateral" class="interior-menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="logoMenu">
+                    <p>TWHEELS</p>
+                </div>
+                <div class="menuItems">
+                    <a onclick="homeLogado()">Home</a>
+                    <a onclick="quemSomosLogado()">Who we are</a>
+                    <a onclick="contactosLogado()">Contacts</a>
+                </div>
+           
+                <div class="rodapeMenu">
+                    <div class="neumorfismo-1">
+                        <img src="../Icons/perfilBack.svg" class="backMenu">
+                    </div>
+                </div>
+                <p class="bottomMenu user" onclick="editarPerfil()">Create account</p>            
+        </div>
+
+        <div id="proLateral" class="interior-pro">
+        <a href="javascript:void(0)" class="closebtn" onclick="closePro()">&times;</a>
+
+            <div class="logoMenu">
+                <p>TWHEELS</p>
+            </div>
+
+            <div class="fotoPerfil">
+                <div  class="neumorfismo-3">
+                </div>
+            </div>
+
+                
+            <p class="centradoIn user" onclick="editarPerfil()"></p>
+                
+
+            
+            <div class="logOut">
+                <span onclick="sair()">Log Out</span>
+            </div>
+            
+
+            <p class="atividadePro">Your activity</p>
+
+
+            <ul id="listaFatura" class="bikeName itemValor">
+
+            </ul>
+        
+            <button id="valorCompra" type="button" class="menuBotaoValor  valorLocation" onclick="finalCompra()"><label id="priceFinal" class="btnPrice"></button>
+            <label id="limparCompra" class="limparLocation" onclick="cleanLocalStorage();closePro()">Clear</label>   
+            
+
+        </div>
+    </body>    
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <title>Buy</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/twheels.css">
+    <script src="../JavaScript/twheels.js"></script>
+</html>
+
+<body onload="loadUserName(), comprar(), getBikeInfo('compra')">
+    <div class="center   center_text logoPrincipal">
+        <h1>TWHEELS</h1>
+    </div>
+    <div>
+    </div>
+    <div class="esq" onclick="openNav(), closePro()">
+        <div class="neumorfismo-1">
+            <img src="../Icons/menu.svg" class="backMenu">
+        </div> 
+    </div> 
+    <div class="dir" onclick="openPro(), closeNav()">
+        <div  class="neumorfismo-1">
+            <img src="../Icons/perfilBack.svg" class="backMenu">
+        </div>
+        <span class="w3-badge" id="badgeCarrinho"></span>
+    </div>
+
+    <div id="menuLateral" class="interior-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="logoMenu">
+                <p>TWHEELS</p>
+            </div>
+            <div class="menuItems">
+                <a onclick="homeLogado()">Home</a>
+                <a onclick="quemSomosLogado()">Who we are</a>
+                <a onclick="contactosLogado()">Contacts</a>
+            </div>
+       
+            <div class="rodapeMenu">
+                <div class="neumorfismo-1">
+                    <img src="../Icons/perfilBack.svg" class="backMenu">
+                </div>
+            </div>
+            <p class="bottomMenu user" onclick="editarPerfil()">Create account</p>            
+    </div>
+
+        <div id="proLateral" class="interior-pro">
+            <a href="javascript:void(0)" class="closebtn" onclick="closePro()">&times;</a>
+                <div class="logoMenu">
+                    <p>TWHEELS</p>
+                </div>
+                <div class="fotoPerfil">
+                    <div  class="neumorfismo-3">
+                    </div>
+                </div>
+                <p class="centradoIn user" onclick="editarPerfil()"></p>
+                
+                <div class="logOut">
+                    <span onclick="sair()">Log Out</span>
+                </div>
+                
+                <p class="atividadePro">Your activity</p>
+                
+                <ul id="listaFatura" class="bikeName itemValor">
+
+                </ul>
+            
+                <button id="valorCompra" type="button" class="menuBotaoValor  valorLocation" onclick="finalCompra()"><label id="priceFinal" class="btnPrice"></button>
+                <label id="limparCompra" onclick="cleanLocalStorage(); closePro()" class="limparLocation">Limpar</label>
+            </div>
+
+            <div class="section_block center" style='background-image: url("../media/registo.png"); background-repeat: no-repeat; background-position: center'>
+                <div style="padding-bottom: 125px;">
+                    <p class="subtitulo" id="nomeBike"></p>
+                    <div class="instrucoes">
+                        <p>It's the final sprint</p>
+                    </div>
+                    <img class="perfilBike" src="../Icons/oldBike.jpg">
+                    <p class="infoTitulo">Some information...</p>
+                    <button type="button" class="infoButton" onclick="produto();comprar(); trabalhosLogado();"><label id="valorBike" class="btnPrice"> €</label></button>
+                </div>
+            </div>
+</body>

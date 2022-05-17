@@ -1,0 +1,1056 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: #E9E6E6;
+  font-family: 'Lato', sans-serif;
+}
+
+.w3-badge,.w3-tag { 
+  background-color:#F48304;
+  color:#fff;
+  display:inline-block;
+  padding-left:8px;
+  padding-right:8px;
+  text-align:center;
+  font-weight: medium;
+}
+  
+.w3-badge{
+  border-radius:50%
+}
+
+.logoPrincipal {
+  font-weight: bold;
+  font-size: 150%;
+  color: #F48304;
+  margin: 0;
+  background-color: #E9E6E6;
+  margin-top: -1.5%;
+  
+}
+
+.section_block { 
+  height: 100%;
+  position: relative; 
+  top: 100px; 
+  text-align: center; 
+} 
+
+
+.center {
+  margin: auto;
+  width: 70%;
+  
+}
+
+.center_text {
+   text-align: center; 
+}
+
+.categoria{
+  width: 70%;
+  height: 100%;
+  position: relative;
+  align-items: center;
+}
+
+.subtitulo{
+  font-weight:bold;
+  font-size: 190%;
+  color:#F48304;
+  padding-top: 35px;
+}
+
+.instrucoesRestauro {
+  font-size: 115%;
+  font-weight: lighter;
+  color: #F48304;
+  margin-top: 35px;
+}
+
+.containerBike{
+  position: relative;
+}
+
+.textBlock{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.centradoRestauro {
+  margin: 0;
+  cursor: pointer;
+  background-color: #E9E6E6;
+  border-radius: 25px;
+  box-shadow:  -6px -6px 9px #ffffff60, 6px 6px 7px rgb(94,104,121,.270);
+  padding: 10px 40px;
+  font-size: 85%;
+  color: #415A65;
+  cursor: pointer;
+  font-weight: medium;  
+  display: inline-block;
+  margin: 5px;
+}
+
+.centradoRestauro:hover{
+  transition: all .2s ease-in-out; 
+  transform: scale(1.08);
+}
+
+
+.centradoListaBikes {
+  margin: 0;
+  cursor: pointer;
+  cursor: pointer;
+  font-weight: medium;
+  display: inline-block;
+  margin: 50px;
+}
+
+.centradoListaBikes :hover{
+  transition: all .2s ease-in-out; 
+  transform: scale(1.2);
+}
+
+.specBotao{
+  font-size: 85%;
+  color: #415A65;
+  cursor: pointer;
+  font-weight: medium;
+  white-space: nowrap;
+  align-items: center;
+}
+
+
+  .instrucoes {
+    margin: 0;
+    font-size: 125%;
+    font-weight: lighter;
+    color: #F48304;
+  }
+
+  .centradoAluguer1 { 
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    background-color: #E9E6E6;
+    border-radius: 3%;
+    box-shadow:  -6px -6px 9px #ffffff60, 6px 6px 7px rgb(94,104,121,.270);
+    padding: 12px 20px;
+  }
+
+.esq{
+  position: fixed;
+  top:5%;
+  left: 5%;
+  cursor: pointer;
+}
+
+.esq:hover{
+  transition: all .2s ease-in-out; 
+  transform: scale(1.08);
+}
+
+
+.dir{
+  position: fixed;
+  top:5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.dir:hover{
+  transition: all .2s ease-in-out; 
+  transform: scale(1.08);
+}
+
+
+.interior-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #E9E6E6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3%;
+    box-shadow:3px 3px 5px rgb(94,104,121,.288);
+    border-radius: 2%;
+  }
+
+  .interior-menu a {
+    padding: 5% -4%;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    top:5%;
+  }
+
+  .menuItems{
+    float:none;
+    position:absolute;
+    top:25%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .menuItems a{
+    color: #415A65;
+    font-weight: bold;
+    font-size: 100%;
+    margin-bottom: 10%;
+    padding-top: 15px;
+  }
+
+  .menuItems a:hover{
+    transition: all .2s ease-in-out; 
+    color: #F48304;
+  }
+
+  .interior-menu .closebtn {
+    position: absolute;
+    top: 2%;
+    left: 25%;
+    font-size: 180%;
+    margin-left: 50%;
+    color: #F48304;
+    font-weight: bold;
+  }
+  .rodapeMenu {
+    float:none;
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%, -80%);
+    margin: 0;
+    font-weight: bold;
+    color: #F48304;
+    margin: 0;
+    cursor:pointer;
+  }
+  .criar {
+    float:none;
+    margin-left: -110px;
+    font-weight: thin;
+    color: #415A65;
+    cursor: pointer;
+    font-size: 80%;
+    list-style-type: none;
+  }
+
+  .bottomMenu {
+    float:none;
+    position:absolute;
+    top:85%;
+    left:50%;
+    transform: translate(-50%, -85%);
+    margin: 0;
+    font-weight: thin;
+    color: #415A65;
+    margin: 0;
+    cursor: pointer;
+    font-size: 80%;
+    list-style-type: none;
+  }
+
+  .bottomMenu:hover{
+    transition: all .2s ease-in-out; 
+    color: #F48304;
+  }
+
+  
+ .interior-pro {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #E9E6E6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3%;
+    box-shadow:-3px -3px 5px rgb(94,104,121,.288);
+    border-radius: 2%;
+  }
+
+  .interior-pro a {
+    padding: 3% 15%;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .interior-pro .closebtn {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    font-size: 180%;
+    margin-right: 50%;
+    color: #f48304;
+    font-weight: bold;
+  }
+
+  .closebtn:hover{
+    transition: all .2s ease-in-out; 
+    transform: scale(1.2);
+  }
+
+  .logoMenu {
+    float:none;
+    position:absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    color: #F48304;
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  .fotoPerfil {
+    float:none;
+    position:absolute;
+    top:35%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    color:  #415A65;
+    font-weight: bold;
+  }
+
+  .centradoIn { 
+    float:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    color:  #415A65;
+  }
+
+  .centradoIn:hover{
+    transition: all .2s ease-in-out; 
+    color: #F48304;
+  }
+
+  .logOut { 
+    float:none;
+    position:absolute;
+    top:52%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    color:  #415A65;
+    font-weight: lighter;
+    font-size: 80%;
+  }
+
+  .logOut:hover{
+    transition: all .2s ease-in-out; 
+    color: #F48304;
+  }
+
+  .atividadePro {
+    float:none;
+    position:absolute;
+    top:72%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-weight: bold;
+    color: #F48304;
+    margin: 0;
+    font-size: 100%;
+  }
+
+  .produtosPro {
+    float: none;
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-weight: thin;
+    color: #415A65;
+    font-size: 95%;
+  }
+
+  .showPreco{
+    float:left;
+    position: relative;
+    top: 15%;
+    left: 60%;
+    transform: translate(100%, 10%);
+    margin: 0;
+    font-weight: medium;
+    color: #415A65;
+    margin: 0;
+    cursor: pointer;
+    font-size: 80%;
+  }
+
+  
+  .itemValor{
+    position: absolute; 
+    top: 75%; 
+    left: 30%;
+    list-style-type: none;
+  }
+
+  .valorLocation{
+    float:none;
+    position:absolute;
+    top:91%;
+    left:89%;
+    transform: translate(-91%, -89%);
+    margin: 0;
+    font-weight: bold;
+    color: #415A65;
+    margin: 0;
+    font-size: 100%;
+    cursor: pointer;
+  }
+
+  .limparLocation{
+    float:none;
+    position:absolute;
+    top:91%;
+    left:92%;
+    transform: translate(-91%, -89%);
+    margin: 0;
+    font-weight: bold;
+    color: #415A65;
+    margin: 0;
+    font-size: 100%;
+    cursor: pointer;
+  }
+
+  .limparLocation:hover{
+    transition: all .2s ease-in-out; 
+    color: #F48304;
+  }
+
+
+  .formFinal{ 
+    float:none;
+    position:absolute;
+    top:50%;
+    left:20%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  
+  .rodape{ 
+    position:fixed;
+    overflow: hidden;
+    background-color:transparent;
+    top:80%;
+    width: 100%;
+    font-size: 100%;
+  }
+
+  .bicicletaName{
+    float:left;
+    text-align: center;
+    text-decoration: none;
+    margin-left:5% ;
+  }
+
+  .comprar{
+    float:right ;
+    margin-right: 5%;
+    cursor: pointer;
+  }
+
+.backMenu{
+  align-items: center;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+} 
+
+.neumorfismo-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: #E9E6E6;
+  border-radius: 50%;
+  box-shadow:  -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94,104,121,.288);
+  position: relative;
+}
+
+.neumorfismo-3{
+  margin: 10px; 
+  height: 125px;
+  width: 125px;
+  background-color:  #E9E6E6;
+  border-radius: 50%;
+  box-shadow:  inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgb(94,104,121,.288); 
+}
+
+.neumorfismo-4{
+  margin: 10px; 
+  height: 50px;
+  width: 50px;
+  background-color:  #E9E6E6;
+  border-radius: 50%;
+  box-shadow:  inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgb(94,104,121,.288); 
+}
+
+.neumorfismo-9{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 350px;
+  background-color: #E9E6E6;
+  border-radius: 1.5%;
+  box-shadow:  -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94,104,121,.288);
+  position: relative;
+}
+
+.neumorfismo-10{ 
+  margin: 10px; 
+  height: 425px;
+  width: 425px;
+  background-color:  #E9E6E6;
+  border-radius: 50%;
+  box-shadow:  inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgb(94,104,121,.288); 
+}
+
+.final{ 
+  background-color: #E9E6E6;
+  position: absolute;
+  top:-65%;
+  left: 50%;
+  transform: translateX(-50%) translateY(65%);
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94,104,121,.288);
+}
+
+.principal{
+  background-color: #E9E6E6;
+  width: 50%;
+  padding: 12px 10px;
+
+  border-radius: 4px;
+  box-shadow:  -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94,104,121,.288);
+}
+
+.page{
+  font-weight: lighter;
+  font-size: 150%;
+  color: #F48304;
+  position: absolute;
+  top:15%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-15%);
+}
+
+.textfields{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 10px 10px;
+  display: inline-block;
+  border: 1px solid rgb(94,104,121,.288);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.textfieldsContacto{
+  width: 125%;
+  padding: 12px 20px;
+  margin: 10px 10px;
+  display: inline-block;
+  border: 1px solid rgb(94,104,121,.288);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formButton{
+  width: 32%;
+  background-color: #F48304;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: medium;
+  font-size: 85%;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.formButton:hover {
+  background-color: rgb(209, 116, 9);
+}
+
+
+label {
+  font-weight: lighter;
+  font-size: 100%;
+}
+
+.separar {
+  padding-top: 20px;
+}
+
+
+
+.instrucoesComprar {
+  float:none;
+  position:absolute;
+  top:20%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  font-size: 125%;
+  font-weight: lighter;
+  color: #F48304;
+}
+
+.produto1 {
+  float:none;
+  position:absolute;
+  top:38%;
+  left:30%;
+  transform: translate(-38%, -30%);
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  background-color: #E9E6E6;
+  border-radius: 3%;
+  box-shadow: /*sombra branca*/ -6px -6px 9px #ffffff60, /*sombra escura*/6px 6px 7px rgb(94,104,121,.270);
+  padding: 24px 40px;
+}
+
+.produto2 {
+  float:none;
+  position:absolute;
+  top:38%;
+  left:50%;
+  transform: translate(-38%, -30%);
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  background-color: #E9E6E6;
+  border-radius: 3%;
+  box-shadow: /*sombra branca*/ -6px -6px 9px #ffffff60, /*sombra escura*/6px 6px 7px rgb(94,104,121,.270);
+  padding: 24px 40px;
+}
+
+.produto3 {
+  float:none;
+  position:absolute;
+  top:38%;
+  left:70%;
+  transform: translate(-38%, -30%);
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  background-color: #E9E6E6;
+  border-radius: 3%;
+  box-shadow: /*sombra branca*/ -6px -6px 9px #ffffff60, /*sombra escura*/6px 6px 7px rgb(94,104,121,.270);
+  padding: 24px 40px;
+}
+
+.produto4 {
+  float:none;
+  position:absolute;
+  top:60%;
+  left:30%;
+  transform: translate(-38%, -30%);
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  background-color: #E9E6E6;
+  border-radius: 3%;
+  box-shadow: /*sombra branca*/ -6px -6px 9px #ffffff60, /*sombra escura*/6px 6px 7px rgb(94,104,121,.270);
+  padding: 24px 40px;
+}
+
+.produto5 {
+  float:none;
+  position:absolute;
+  top:60%;
+  left:50%;
+  transform: translate(-38%, -30%);
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  background-color: #E9E6E6;
+  border-radius: 3%;
+  box-shadow: /*sombra branca*/ -6px -6px 9px #ffffff60, /*sombra escura*/6px 6px 7px rgb(94,104,121,.270);
+  padding: 24px 40px;
+}
+
+.produto6 {
+  float:none;
+  position:absolute;
+  top:60%;
+  left:70%;
+  transform: translate(-38%, -30%);
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  background-color: #E9E6E6;
+  border-radius: 3%;
+  box-shadow: /*sombra branca*/ -6px -6px 9px #ffffff60, /*sombra escura*/6px 6px 7px rgb(94,104,121,.270);
+  padding: 24px 40px;
+}
+
+.produto7 {
+  float:none;
+  position:absolute;
+  top:82%;
+  left:30%;
+  transform: translate(-38%, -30%);
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  background-color: #E9E6E6;
+  border-radius: 3%;
+  box-shadow: /*sombra branca*/ -6px -6px 9px #ffffff60, /*sombra escura*/6px 6px 7px rgb(94,104,121,.270);
+  padding: 24px 40px;
+}
+
+.produto8 {
+  float:none;
+  position:absolute;
+  top:82%;
+  left:50%;
+  transform: translate(-38%, -30%);
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  background-color: #E9E6E6;
+  border-radius: 3%;
+  box-shadow: /*sombra branca*/ -6px -6px 9px #ffffff60, /*sombra escura*/6px 6px 7px rgb(94,104,121,.270);
+  padding: 24px 40px;
+}
+
+.produto9 {
+  float:none;
+  position:absolute;
+  top:82%;
+  left:70%;
+  transform: translate(-38%, -30%);
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  background-color: #E9E6E6;
+  border-radius: 3%;
+  box-shadow: /*sombra branca*/ -6px -6px 9px #ffffff60, /*sombra escura*/6px 6px 7px rgb(94,104,121,.270);
+  padding: 24px 40px;
+}
+
+.bicicletaCompra {
+  float:none;
+  position:absolute;
+  top:50%;
+  left:25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  color:  #415A65;
+  font-weight: medium;
+}
+
+.infosBicicleta {
+  float:none;
+  position:absolute;
+  top:52%;
+  left:75%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  color:  #415A65;
+  font-weight: medium;
+  text-decoration: none;
+}
+
+.nomeBicicleta {
+  border: 0.5px solid  #415A65;
+  width: 75%;
+  float:none;
+  position:absolute;
+  top:15%;
+}
+
+.totalBicicleta {
+    border: 0.5px solid  #415A65;
+    width: 35%;
+    float:none;
+    position:absolute;
+    top:85%;
+    right: 12%;
+}
+
+.total{
+  float:none;
+  position:absolute;
+  top:90%;
+  right:26%;
+  transform: translate(-50%, -50%);
+}
+
+.botaoCompra {
+  float:none;
+  position:absolute;
+  top:90%;
+  left:83%;
+  transform: translate(-50%, -50%);
+  font-weight: medium;
+}
+
+
+.info{
+  background-color: #E9E6E6;
+  position: absolute;
+  top:60%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 25%;
+  padding: 420px 20px;
+  padding-top: 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  box-shadow:  -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94,104,121,.288);
+}
+
+.infoTitulo{
+  color: #415A65;
+  cursor: pointer;
+  font-weight: medium;
+  margin: 30px;
+}
+
+.infoPreco{
+  color: #415A65;
+  cursor: pointer;
+  font-weight: medium;
+  font-size: 100%;
+  position: absolute;
+  top: 315px;
+  left: 250px;
+
+}
+
+.divisoria{
+  width: 50%;
+  position: relative;
+  padding-top: 10%;
+  left: 25%;
+}
+
+.perfilBike{
+  border-radius: 50%;
+  width: 15%;
+  height: auto;
+  box-shadow:  -3px -3px 7px rgb(94,104,121,.288), 3px 3px 5px rgb(94,104,121,.288);
+  border: 2px solid #E9E6E6;
+  margin:20px;
+}
+
+.perfilButton{
+  border-radius: 50%;
+  width: 35%;
+  height: auto;
+  box-shadow:  -3px -3px 7px rgb(94,104,121,.288), 3px 3px 5px rgb(94,104,121,.288);
+  border: 2px solid #E9E6E6;
+  margin:20px;
+  display: inline-block;
+}
+
+
+.infoButton{
+width: 12%;
+background-color: #F48304;
+color: white;
+padding: 14px 20px;
+margin: 20px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-weight: medium;
+font-size: 110%;
+}
+
+.infoButton:hover{
+  background-color: rgb(209, 116, 9);
+}
+
+.btnZone{
+  width: 50%;
+  position: absolute;
+  top: 350px;
+  left: 220px;
+}
+
+.openLabel {
+  cursor: pointer;
+  color: #E9E6E6;
+  cursor: pointer;
+  font-weight: medium;
+  font-size: 65%;
+}
+
+.btnPrice{
+  cursor: pointer;
+  color: white;
+  cursor: pointer;
+  font-weight: medium;
+  font-size: 100%;
+}
+
+.horasAluguer{
+  width: 5%;
+  padding: 8px 5px;
+  margin: -10px 0;
+  display: inline-block;
+  border: 1px solid rgb(94,104,121,.288);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.menuBotaoValor{
+  width: 45%;
+  background-color: #F48304;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: medium;
+  font-size: 110%;
+  left: 60%;
+}
+
+.menuBotaoValor:hover{
+  background-color: rgb(185, 105, 13);
+}
+
+.validar{
+  color: #415A65;
+  font-weight: medium;
+  text-align: justify;
+  margin-left: 270px;
+}
+
+.mainList{
+  display: flex;
+}
+
+@media screen and (max-width: 885px) {
+  .mainList {
+    display:inline-block;
+  }
+}
+
+@media screen and (max-width: 2200px) and (min-width: 1600px) {
+  .openLabel {
+   font-size: 60%;
+  }
+}
+
+@media screen and (max-height: 600px)  {
+  .subtitulo {
+   padding-top: -4px;
+  }
+}
+
+
+@media screen and (max-width: 600px)  {
+  .perfilBike{
+    width: 40%;
+  }
+  .infoButton{
+    width: 25%;
+  }
+  .validar {
+    margin-left: 115px;
+  }
+}
+
+@media screen and (max-width: 700px)  {
+  .validar {
+    margin-left: 110px;
+  }
+}
+
+
+.middle{
+  position: absolute;
+  top:90%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+
+#mouse{
+ width: 15px;
+ height: 35px;
+ border: 1.8px solid rgba(8, 8, 8, 0.267);
+ border-radius: 70px;
+ transition: 0.2s;
+}
+
+#mouse::before{
+  content: "";
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 30px;
+  background: rgba(8, 8, 8, 0.267);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity:1;
+  animation: mouse 2s infinite;
+}
+
+@keyframes mouse{
+  from{
+      opacity: 1;
+      top: 10px;
+  }
+  to{
+      opacity: 0;
+      top: 40px;
+  }
+}
+
+.bi {
+  font-size: 100%;
+}
+
+.app {
+  cursor: pointer;
+}

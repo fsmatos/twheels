@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<hmtl>
+    <link rel="stylesheet" type = "text/css" href="../CSS/twheels.css">
+    <meta name = "viewport" content="width= device-width, inicial-scale=1.0">
+    <script src="../JavaScript/twheels.js"></script>
+    <body onload="loadUserName(); comprar();">
+        <div class="center   center_text logoPrincipal">
+            <h1>TWHEELS</h1>
+        </div>
+        <div class="esq" onclick="openNav(), closePro()">
+            <div class="neumorfismo-1">
+                <img src="../Icons/menu.svg" class="backMenu">
+            </div> 
+        </div> 
+        <div class="dir" onclick="openPro(), closeNav()">
+            <div  class="neumorfismo-1">
+                <img src="../Icons/perfilBack.svg" class="backMenu">
+            </div>
+            <span class="w3-badge" id="badgeCarrinho"></span>
+        </div>
+
+        <div class="section_block center" style='background-image: url("../media/registo.png"); background-repeat: no-repeat; background-position: center'>
+            <div class="instrucoes">
+                <p id="escolhas">Almost there</p>
+            </div>
+            <div class="mainList">
+                <div class="centradoListaBikes  containerBike">    
+                    <img onclick="abrirBicicletaCompraLogado(1, 'BoneShaker', '80')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaCompraLogado(1, 'BoneShaker', '80')" class="openLabel">BoneShaker</label>
+                    </div>
+                </div>
+
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaCompraLogado(1, 'Columbia Ordinary', '90')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaCompraLogado(2, 'Columbia Ordinary', '90')" class="openLabel">Columbia Ordinary</label>
+                    </div>
+                </div>
+
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaCompraLogado(1, 'The Express', '100')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaCompraLogado(3, 'The Express', '100')" class="openLabel">The Express</label>
+                    </div>
+                </div>
+            </div>
+            <div class="mainList">
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaCompraLogado(1, 'Imperial', '120')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaCompraLogado(4, 'Imperial', '50')" class="openLabel">Imperial</label>
+                    </div>
+                </div>
+            
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaCompraLogado(1, 'Imperial', '100')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaCompraLogado(5, 'Imperial', '100')" class="openLabel">Imperial</label>
+                    </div>
+                </div>
+
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaCompraLogado(1, 'Andrae', '90')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaCompraLogado(6, 'Andrae', '90')" class="openLabel">Andrae</label>
+                    </div>
+                </div>
+            </div>
+            <div class="mainList">
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaCompraLogado(1, 'Columbia Ordinary', '80')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaCompraLogado(7, 'Columbia Ordinary', '80')" class="openLabel">Columbia Ordinary</label>
+                    </div>
+                </div>
+
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaCompraLogado(1, 'BoneShaker', '90')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaCompraLogado(8, 'Boneshaker', '90')" class="openLabel">Boneshaker</label>
+                    </div>
+                </div>
+
+                <div class="centradoListaBikes  containerBike">
+                    <img onclick="abrirBicicletaCompraLogado(1, 'The Express', '100')" class="perfilButton" src="../Icons/oldBike.jpg">
+                    <div class="textBlock">
+                        <label onclick="abrirBicicletaCompraLogado(9, 'The Express', '100')" class="openLabel">The Express</label>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+        <div id="menuLateral" class="interior-menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="logoMenu">
+                    <p>TWHEELS</p>
+                </div>
+                <div class="menuItems">
+                    <a onclick="homeLogado()">Home</a>
+                    <a onclick="quemSomosLogado()">Who we are</a>
+                    <a onclick="contactosLogado()">Contacts</a>
+                </div>
+           
+                <div class="rodapeMenu">
+                    <div class="neumorfismo-1">
+                        <img src="../Icons/perfilBack.svg" class="backMenu">
+                    </div>
+                </div>
+                <p class="bottomMenu user" onclick="editarPerfil()">Create Account</p>            
+        </div>
+
+        <div id="proLateral" class="interior-pro">
+            <a href="javascript:void(0)" class="closebtn" onclick="closePro()">&times;</a>
+                <div class="logoMenu">
+                    <p>TWHEELS</p>
+                </div>
+                <div class="fotoPerfil">
+                    <div  class="neumorfismo-3">
+                    </div>
+                </div>
+                <p class="centradoIn user" onclick="editarPerfil()"></p>
+                
+                <div class="logOut">
+                    <span onclick="sair()">Log Out</span>
+                </div>
+                
+                <p class="atividadePro">Your activity</p>
+                
+                <ul id="listaFatura" class="bikeName itemValor">
+
+                </ul>
+            
+                <button id="valorCompra" type="button" id="valorCompra" class="menuBotaoValor  valorLocation" onclick="finalCompra()"><label id="priceFinal" class="btnPrice"></button>
+                <label onclick="cleanLocalStorage();closePro()" id="limparCompra" class="limparLocation">Clear</label>
+            </div>
+    </body>
+</hmtl>

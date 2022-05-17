@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="../CSS/twheels.css">
+    <script src="../JavaScript/twheels.js"></script>
+    <body onload="inicial()">
+        <div class="center   center_text logoPrincipal">
+            <h1>TWHEELS</h1>
+        </div>
+        <div class="esq" onclick="openNav(), closePro()">
+            <div class="neumorfismo-1">
+                <img src="../Icons/menu.svg" class="backMenu">
+            </div> 
+        </div> 
+        <div class="dir" onclick="openPro(), closeNav()">
+            <div  class="neumorfismo-1">
+                <img src="../Icons/perfilBack.svg" class="backMenu">
+            </div>
+        </div>
+        
+       <div class="section_block center" style='background-image: url("../media/restauroBike.png"); background-repeat: no-repeat; background-position: center'>
+            <p class="subtitulo">REPAIR</p>
+            <p class="instrucoesRestauro">Join us on this Tour and see the possibilities of One-Touch-Purchase</p>
+            <div  class="centradoRestauro" ><label class="specBotao" onclick="trabalhos()">See our work</label></div>
+        </div>
+        
+        <div class="section_block center" style='background-image: url("../media/bikePublicidadeAluguer.png"); background-repeat: no-repeat; background-position: center'>
+            <p class="subtitulo" id="aluguer">RENT</p>
+            <p class="instrucoesRestauro">Choose a category</p>
+                <div>
+                    <div class="centradoRestauro" onclick="rent()" id="destinoAluguer">
+                        <label class="specBotao" onclick="rent()">Single</label>
+                    </div>
+
+                    <div class="centradoRestauro" onclick="rent()">
+                        <label class="specBotao" onclick="rent()">Couple</label>
+                    </div>
+
+                    <div class="centradoRestauro" onclick="rent()">
+                        <label class="specBotao" onclick="rent()">Group</label>
+                    </div>
+                </div>
+        </div>
+
+        <div id="menuLateral" class="interior-menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="logoMenu">
+                    <p>TWHEELS</p>
+                </div>
+                <div class="menuItems">
+                    <a onclick="home()">Home</a>
+                    <a onclick="quemSomos()">Who we are</a>
+                    <a onclick="contactos()">Contacts</a>
+                </div>
+           
+                <div class="rodapeMenu">
+                    <div class="neumorfismo-1">
+                        <img src="../Icons/perfilBack.svg" class="backMenu">
+                    </div>
+                </div>
+                <p class="bottomMenu" onclick="criarConta()">Create Account</p>            
+        </div>
+
+        <div id="proLateral" class="interior-pro">
+            <a href="javascript:void(0)" class="closebtn" onclick="closePro()">&times;</a>
+                <div class="logoMenu">
+                    <p>TWHEELS</p>
+                </div>
+                <div class="fotoPerfil">
+                    <div  class="neumorfismo-3">
+                    </div>
+                </div>
+                
+                    <div class="centradoIn">
+                    <span onclick="criarConta()">Register</span>
+                    </div>
+                
+                <p class="atividadePro">Your activity</p>
+                <p id="valorCompra" class="bottomMenu"></p>  
+            </div>
+    </body>
+</html>
